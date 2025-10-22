@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClueWord: The Daily Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>ClueWord</h1>
+        <p>Solve clues to reveal 5 letters, then arrange them to find the word.</p>
+    </header>
+
+    <main id="game-container">
+        
+        <section id="clue-section">
+            <h2>Clues</h2>
+            <div id="clue-boxes" class="clue-grid">
+                </div>
+
+            <div id="revealed-letters-container">
+                <h3>Revealed Letters (Jumble Pool)</h3>
+                <div id="revealed-letters" class="jumble-pool">
+                    </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="arrangement-section" class="hidden">
+            <h2>Word Arrangement</h2>
+            <div id="guess-grid" class="grid-5">
+                </div>
+
+            <p id="guess-status">Guesses Remaining: <span id="attempts-left">6</span>/6</p>
+        </section>
+        
+    </main>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    
+    <div id="clue-modal" class="modal hidden">
+        <h3 id="modal-title">Clue Riddle</h3>
+        <p id="modal-riddle"></p>
+        <input type="text" id="clue-answer-input" placeholder="Type the letter (or word) clue here" maxlength="20">
+        <p id="clue-feedback" class="feedback"></p>
+        <button id="submit-clue-button">Submit Answer</button>
+        <button id="close-modal-button">Close</button>
+    </div>
+
+    <div id="keyboard-container">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
