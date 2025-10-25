@@ -7,50 +7,176 @@
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
-    <header>
-        <h1>ClueWord</h1>
-        <p>Solve clues to reveal 5 letters, then arrange them to find the word.</p>
+    <header class="game-header">
+        <div class="header-content">
+            <div class="title-section">
+                <h1 class="game-title">
+                    <span class="title-icon">🧩</span>
+                    <span class="title-text">ClueWord</span>
+                </h1>
+                <p class="game-subtitle">The Daily Puzzle Challenge</p>
+                <p class="game-description">Solve clever clues to reveal letters, then arrange them into the perfect word!</p>
+            </div>
+            
+        </div>
+        
+        <div class="header-decoration">
+            <div class="decoration-line"></div>
+            <div class="decoration-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="decoration-line"></div>
+        </div>
     </header>
 
     <main id="game-container">
         
         <section id="clue-section">
-            <h2>Clues</h2>
-            <div id="clue-boxes" class="clue-grid">
+            <div class="clue-header">
+                <h2>🔍 Solve the Clues</h2>
+                <p class="clue-subtitle">Click on a clue to reveal its letter. Solve all 5 to unlock the word arrangement!</p>
+                <div class="progress-indicator">
+                    <span id="progress-text">0/5 Clues Solved</span>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
                 </div>
+            </div>
 
             <div id="revealed-letters-container">
-                <h3>Revealed Letters (Jumble Pool)</h3>
+                <div class="jumble-header">
+                    <h3>🎯 Your Letters</h3>
+                    <p class="jumble-subtitle">Letters will appear here as you solve clues</p>
+                </div>
                 <div id="revealed-letters" class="jumble-pool">
-                    </div>
+                    <div class="letter-placeholder">?</div>
+                    <div class="letter-placeholder">?</div>
+                    <div class="letter-placeholder">?</div>
+                    <div class="letter-placeholder">?</div>
+                    <div class="letter-placeholder">?</div>
+                </div>
             </div>
+            
+            <div id="clue-boxes" class="clue-grid">
+                </div>
         </section>
 
         <hr>
 
         <section id="arrangement-section" class="hidden">
-            <h2>Word Arrangement</h2>
-            <div id="guess-grid" class="grid-5">
+            <div class="arrangement-header">
+                <h2>🎯 Arrange the Letters</h2>
+                <p class="arrangement-subtitle">You have all the letters! Now arrange them to form the target word.</p>
+                <div class="attempts-indicator">
+                    <span id="guess-status">Guesses Remaining: <span id="attempts-left">2</span>/2</span>
                 </div>
+            </div>
 
-            <p id="guess-status">Guesses Remaining: <span id="attempts-left">6</span>/6</p>
+            <div class="guess-container">
+                <div id="guess-error" class="guess-error hidden">
+                    <span id="guess-error-text"></span>
+                </div>
+                <div id="guess-grid" class="grid-5">
+                </div>
+            </div>
+
+            <div class="arrangement-instructions">
+                <p>💡 <strong>Hint:</strong> Use the keyboard or click the virtual keys below to type your guess.</p>
+            </div>
         </section>
         
     </main>
 
-    <div id="modal-backdrop" class="hidden"></div>
+    <div id="modal-backdrop" class="modal-backdrop hidden"></div>
     
-    <div id="clue-modal" class="modal hidden">
-        <h3 id="modal-title">Clue Riddle</h3>
-        <p id="modal-riddle"></p>
-        <input type="text" id="clue-answer-input" placeholder="Type the letter (or word) clue here" maxlength="20">
-        <p id="clue-feedback" class="feedback"></p>
-        <button id="submit-clue-button">Submit Answer</button>
-        <button id="close-modal-button">Close</button>
+    <div id="clue-modal" class="clue-modal hidden">
+        <div class="modal-header">
+            <div class="modal-icon">🧩</div>
+            <h3 id="modal-title">Clue Riddle</h3>
+            <button id="close-modal-button" class="close-button">×</button>
+        </div>
+        
+        <div class="modal-content">
+            <div class="riddle-container">
+                <div class="riddle-label">Riddle:</div>
+                <div id="modal-riddle" class="riddle-text"></div>
+            </div>
+            
+            <div class="input-container">
+                <label for="clue-answer-input" class="input-label">Your Answer:</label>
+                <input type="text" id="clue-answer-input" placeholder="Enter the letter here..." maxlength="1" autocomplete="off">
+                <div class="input-hint">Type a single letter</div>
+            </div>
+            
+            <div id="clue-feedback" class="feedback-message"></div>
+            
+            <div class="modal-actions">
+                <button id="submit-clue-button" class="submit-button">
+                    <span class="button-text">Submit Answer</span>
+                    <span class="button-icon">✓</span>
+                </button>
+            </div>
+        </div>
     </div>
 
     <div id="keyboard-container">
         </div>
+
+    <!-- Statistics Modal -->
+    <div id="stats-modal" class="stats-modal hidden">
+        <div class="stats-modal-content">
+            <div class="stats-header">
+                <h2>🎉 Congratulations!</h2>
+                <p class="stats-subtitle">You solved the ClueWord puzzle!</p>
+            </div>
+            <!-- TODO: Add stats grid back in -->
+            <!-- <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-value" id="stat-total-games">0</div>
+                    <div class="stat-label">Games Played</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value" id="stat-win-rate">0%</div>
+                    <div class="stat-label">Win Rate</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-value" id="stat-current-streak">0</div>
+                    <div class="stat-label">Current Streak</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-value" id="stat-best-streak">0</div>
+                    <div class="stat-label">Best Streak</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-value" id="stat-avg-attempts">0</div>
+                    <div class="stat-label">Avg Attempts</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🎮</div>
+                    <div class="stat-value" id="stat-today-attempts">1</div>
+                    <div class="stat-label">Today's Attempts</div>
+                </div>
+            </div> -->
+            
+            <div class="stats-actions">
+                <button id="close-stats-modal" class="stats-close-button">
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
