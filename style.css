@@ -29,7 +29,7 @@ body {
 .game-header {
     background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
     color: white;
-    padding: 40px 20px;
+    padding: 16px 20px;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -62,12 +62,12 @@ body {
 }
 
 .game-title {
-    margin: 0 0 10px 0;
-    font-size: 3.5em;
+    margin: 0 0 4px 0;
+    font-size: 2em;
     font-weight: 800;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     color: #fbbf24;
 }
 
@@ -104,8 +104,8 @@ body {
 }
 
 .game-subtitle {
-    margin: 0 0 8px 0;
-    font-size: 1.3em;
+    margin: 0 0 2px 0;
+    font-size: 0.85em;
     font-weight: 600;
     color: #cbd5e1;
     text-transform: uppercase;
@@ -114,10 +114,10 @@ body {
 
 .game-description {
     margin: 0;
-    font-size: 1.1em;
+    font-size: 0.85em;
     color: #94a3b8;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.4;
     max-width: 500px;
 }
 
@@ -126,7 +126,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     gap: 20px;
 }
 
@@ -1315,6 +1315,58 @@ body {
     .stats-header h2 {
         font-size: 1.8em;
     }
+}
+
+/* --- COMPLETED BANNER --- */
+.completed-banner {
+    width: 100%;
+    padding: 20px 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.completed-banner.won {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    border: 2px solid #10b981;
+    color: #065f46;
+}
+
+.completed-banner.lost {
+    background: linear-gradient(135deg, #fee2e2, #fecaca);
+    border: 2px solid #ef4444;
+    color: #7f1d1d;
+}
+
+.completed-icon {
+    font-size: 2.5em;
+}
+
+.completed-banner strong {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.completed-banner p {
+    margin: 0;
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+.completed-tomorrow {
+    font-size: 0.85em !important;
+    opacity: 0.65 !important;
+    font-style: italic;
+}
+
+/* Mobile scroll padding so keyboard doesn't cover content */
+#keyboard-container {
+    margin-bottom: 20px;
 }
 
 /* --- UTILITIES --- */

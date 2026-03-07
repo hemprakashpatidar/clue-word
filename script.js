@@ -276,26 +276,248 @@ const puzzleData = [
             { "pos": 3, "char": "N", "riddle": "The letter that comes after 'M' in the alphabet (again)." },
             { "pos": 4, "char": "Y", "riddle": "The letter that looks like a fork in the road." }
         ]
+    },
+    {
+        "day_index": 20,
+        "target_word": "FLAME",
+        "clues": [
+            { "pos": 0, "char": "F", "riddle": "I start the word for fire's flickering light." },
+            { "pos": 1, "char": "L", "riddle": "I start 'laughter' — the sound of joy." },
+            { "pos": 2, "char": "A", "riddle": "I'm the first letter of the alphabet and the first vowel." },
+            { "pos": 3, "char": "M", "riddle": "I start 'midnight' — the darkest, quietest hour." },
+            { "pos": 4, "char": "E", "riddle": "I'm the most common letter in English, found in nearly every sentence." }
+        ]
+    },
+    {
+        "day_index": 21,
+        "target_word": "BEACH",
+        "clues": [
+            { "pos": 0, "char": "B", "riddle": "I start 'breeze' — the gentle wind that cools a warm day." },
+            { "pos": 1, "char": "E", "riddle": "I start 'east' — where the sun rises over the water." },
+            { "pos": 2, "char": "A", "riddle": "I'm the vowel that sounds like the 'ah' of relaxation." },
+            { "pos": 3, "char": "C", "riddle": "I sound like 'sea' but I'm spelled differently." },
+            { "pos": 4, "char": "H", "riddle": "I start 'horizon' — the line where sky meets water." }
+        ]
+    },
+    {
+        "day_index": 22,
+        "target_word": "STONE",
+        "clues": [
+            { "pos": 0, "char": "S", "riddle": "I start 'solid' — the state of matter that holds its shape." },
+            { "pos": 1, "char": "T", "riddle": "I start 'tough' — the quality of something hard and durable." },
+            { "pos": 2, "char": "O", "riddle": "I look like a cross-section of a rock — perfectly round." },
+            { "pos": 3, "char": "N", "riddle": "I start 'nature' — where stones are found scattered and ancient." },
+            { "pos": 4, "char": "E", "riddle": "I end 'home', 'dome', and many words that stand firm." }
+        ]
+    },
+    {
+        "day_index": 23,
+        "target_word": "CROWN",
+        "clues": [
+            { "pos": 0, "char": "C", "riddle": "I start 'ceremony' — the formal event where a crown is bestowed." },
+            { "pos": 1, "char": "R", "riddle": "I start 'royal' — the status of those who wear crowns." },
+            { "pos": 2, "char": "O", "riddle": "I'm shaped like the band of a crown — round and unbroken." },
+            { "pos": 3, "char": "W", "riddle": "I start 'wear' — what you do with a crown on your head." },
+            { "pos": 4, "char": "N", "riddle": "I start 'noble' — the rank of those born to rule." }
+        ]
+    },
+    {
+        "day_index": 24,
+        "target_word": "FROST",
+        "clues": [
+            { "pos": 0, "char": "F", "riddle": "I start 'freeze' — what happens to water on a cold night." },
+            { "pos": 1, "char": "R", "riddle": "I start 'rigid' — how things become when frozen solid." },
+            { "pos": 2, "char": "O", "riddle": "I start 'October' — often the first month of frosty mornings." },
+            { "pos": 3, "char": "S", "riddle": "I start 'snow' — the frozen cousin of frost." },
+            { "pos": 4, "char": "T", "riddle": "I start 'temperature' — which drops when frost forms." }
+        ]
+    },
+    {
+        "day_index": 25,
+        "target_word": "PIANO",
+        "clues": [
+            { "pos": 0, "char": "P", "riddle": "I start 'play' — what musicians do with their instrument." },
+            { "pos": 1, "char": "I", "riddle": "I stand alone as a word — the simplest pronoun." },
+            { "pos": 2, "char": "A", "riddle": "I'm the musical note that orchestras tune to — concert pitch." },
+            { "pos": 3, "char": "N", "riddle": "I start 'note' — the building block of every melody." },
+            { "pos": 4, "char": "O", "riddle": "I start 'octave' — eight notes that span a musical scale." }
+        ]
+    },
+    {
+        "day_index": 26,
+        "target_word": "GRAPE",
+        "clues": [
+            { "pos": 0, "char": "G", "riddle": "I start 'grow' — what vines do in a vineyard." },
+            { "pos": 1, "char": "R", "riddle": "I start 'ripe' — the perfect state for picking fruit." },
+            { "pos": 2, "char": "A", "riddle": "I start 'autumn' — the season of harvest and wine-making." },
+            { "pos": 3, "char": "P", "riddle": "I start 'purple' — the color of many dark grapes." },
+            { "pos": 4, "char": "E", "riddle": "I start 'eat' — the final destination of fresh-picked fruit." }
+        ]
+    },
+    {
+        "day_index": 27,
+        "target_word": "CLOUD",
+        "clues": [
+            { "pos": 0, "char": "C", "riddle": "I start 'cover' — what clouds do to the sun on a gray day." },
+            { "pos": 1, "char": "L", "riddle": "I start 'loom' — what storm clouds do on the horizon." },
+            { "pos": 2, "char": "O", "riddle": "I look like a puffy cloud seen from below — round and open." },
+            { "pos": 3, "char": "U", "riddle": "I start 'umbrella' — what you need when clouds bring rain." },
+            { "pos": 4, "char": "D", "riddle": "I start 'drizzle' — the light rain that follows a gray cloud." }
+        ]
+    },
+    {
+        "day_index": 28,
+        "target_word": "BLEND",
+        "clues": [
+            { "pos": 0, "char": "B", "riddle": "I start 'beat' — what you do to mix ingredients together." },
+            { "pos": 1, "char": "L", "riddle": "I start 'liquid' — one state of matter that mixes easily." },
+            { "pos": 2, "char": "E", "riddle": "I start 'even' — what a perfect blend achieves throughout." },
+            { "pos": 3, "char": "N", "riddle": "I start 'neutral' — the balance point where flavors meet." },
+            { "pos": 4, "char": "D", "riddle": "I start 'dissolve' — to mix until no separation remains." }
+        ]
+    },
+    {
+        "day_index": 29,
+        "target_word": "CRISP",
+        "clues": [
+            { "pos": 0, "char": "C", "riddle": "I start 'cold' — the feeling of a brisk autumn morning." },
+            { "pos": 1, "char": "R", "riddle": "I start 'rustle' — the sound of dry leaves underfoot." },
+            { "pos": 2, "char": "I", "riddle": "I start 'ice' — which makes things cold and crisp." },
+            { "pos": 3, "char": "S", "riddle": "I start 'snap' — the sound of something perfectly firm and fresh." },
+            { "pos": 4, "char": "P", "riddle": "I start 'potato' — which becomes crispy when fried or baked." }
+        ]
+    },
+    {
+        "day_index": 30,
+        "target_word": "GLOBE",
+        "clues": [
+            { "pos": 0, "char": "G", "riddle": "I start 'geography' — the study of our round world." },
+            { "pos": 1, "char": "L", "riddle": "I start 'latitude' — the lines that circle the globe horizontally." },
+            { "pos": 2, "char": "O", "riddle": "I'm round like the Earth itself — a perfect sphere in letter form." },
+            { "pos": 3, "char": "B", "riddle": "I start 'border' — the lines that divide countries on a globe." },
+            { "pos": 4, "char": "E", "riddle": "I start 'equator' — the imaginary line around the middle of the globe." }
+        ]
+    },
+    {
+        "day_index": 31,
+        "target_word": "HASTE",
+        "clues": [
+            { "pos": 0, "char": "H", "riddle": "I start 'hurry' — the state of moving faster than comfortable." },
+            { "pos": 1, "char": "A", "riddle": "I start 'alarm' — what goes off when you've overslept." },
+            { "pos": 2, "char": "S", "riddle": "I start 'speed' — the key quality of someone in a rush." },
+            { "pos": 3, "char": "T", "riddle": "I start 'time' — the thing you run out of when moving in haste." },
+            { "pos": 4, "char": "E", "riddle": "I start 'exit' — the way out when you need to leave in a hurry." }
+        ]
+    },
+    {
+        "day_index": 32,
+        "target_word": "IVORY",
+        "clues": [
+            { "pos": 0, "char": "I", "riddle": "I start 'immaculate' — the pure white quality of ivory." },
+            { "pos": 1, "char": "V", "riddle": "I start 'valuable' — the quality that makes ivory so precious." },
+            { "pos": 2, "char": "O", "riddle": "I start 'old' — ivory has been prized since ancient times." },
+            { "pos": 3, "char": "R", "riddle": "I start 'rare' — something precious and increasingly protected." },
+            { "pos": 4, "char": "Y", "riddle": "I ask a question — I start 'why'." }
+        ]
+    },
+    {
+        "day_index": 33,
+        "target_word": "PLUME",
+        "clues": [
+            { "pos": 0, "char": "P", "riddle": "I start 'proud' — like a peacock displaying its magnificent feathers." },
+            { "pos": 1, "char": "L", "riddle": "I start 'light' — feathers are among the lightest things in nature." },
+            { "pos": 2, "char": "U", "riddle": "I start 'up' — the direction a feathered plume waves." },
+            { "pos": 3, "char": "M", "riddle": "I start 'magnificent' — how a full plume of feathers looks." },
+            { "pos": 4, "char": "E", "riddle": "I start 'elegant' — the quality of a flowing plume." }
+        ]
+    },
+    {
+        "day_index": 34,
+        "target_word": "RIDGE",
+        "clues": [
+            { "pos": 0, "char": "R", "riddle": "I start 'rocky' — the texture of a mountain ridge." },
+            { "pos": 1, "char": "I", "riddle": "I start 'incline' — the slope leading up to a ridge." },
+            { "pos": 2, "char": "D", "riddle": "I start 'dramatic' — the view from atop a high ridge." },
+            { "pos": 3, "char": "G", "riddle": "I start 'granite' — the rock that often forms mountain ridges." },
+            { "pos": 4, "char": "E", "riddle": "I start 'elevation' — the height of a mountain ridge above sea level." }
+        ]
+    },
+    {
+        "day_index": 35,
+        "target_word": "SWIFT",
+        "clues": [
+            { "pos": 0, "char": "S", "riddle": "I start 'speed' — the quality of something that moves swiftly." },
+            { "pos": 1, "char": "W", "riddle": "I start 'wind' — which moves swiftly across the landscape." },
+            { "pos": 2, "char": "I", "riddle": "I start 'instant' — something that happens in the blink of an eye." },
+            { "pos": 3, "char": "F", "riddle": "I start 'fast' — the synonym for swift." },
+            { "pos": 4, "char": "T", "riddle": "I start 'tornado' — one of nature's swiftest and most powerful forces." }
+        ]
+    },
+    {
+        "day_index": 36,
+        "target_word": "THYME",
+        "clues": [
+            { "pos": 0, "char": "T", "riddle": "I start 'taste' — the quality herbs add to any dish." },
+            { "pos": 1, "char": "H", "riddle": "I start 'herb' — the category this fragrant plant belongs to." },
+            { "pos": 2, "char": "Y", "riddle": "I start 'yard' — often where herb gardens grow." },
+            { "pos": 3, "char": "M", "riddle": "I start 'Mediterranean' — the region where thyme grows wild on hillsides." },
+            { "pos": 4, "char": "E", "riddle": "I start 'earthy' — the quality of thyme's rich aroma." }
+        ]
+    },
+    {
+        "day_index": 37,
+        "target_word": "VALOR",
+        "clues": [
+            { "pos": 0, "char": "V", "riddle": "I start 'victory' — the reward for those who show valor in battle." },
+            { "pos": 1, "char": "A", "riddle": "I start 'armor' — what a valorous knight wears into battle." },
+            { "pos": 2, "char": "L", "riddle": "I start 'loyalty' — the companion virtue of valor." },
+            { "pos": 3, "char": "O", "riddle": "I start 'oath' — the solemn promise to be brave and true." },
+            { "pos": 4, "char": "R", "riddle": "I start 'righteous' — the quality that makes valor noble." }
+        ]
+    },
+    {
+        "day_index": 38,
+        "target_word": "WHEAT",
+        "clues": [
+            { "pos": 0, "char": "W", "riddle": "I start 'waves' — like golden wheat fields swaying in the breeze." },
+            { "pos": 1, "char": "H", "riddle": "I start 'harvest' — the season when wheat is gathered." },
+            { "pos": 2, "char": "E", "riddle": "I start 'earth' — the soil in which wheat grows." },
+            { "pos": 3, "char": "A", "riddle": "I start 'acre' — the unit used to measure wheat fields." },
+            { "pos": 4, "char": "T", "riddle": "I start 'toast' — what you make from wheat bread." }
+        ]
+    },
+    {
+        "day_index": 39,
+        "target_word": "YIELD",
+        "clues": [
+            { "pos": 0, "char": "Y", "riddle": "I start 'yearly' — how often farmers measure their crop yield." },
+            { "pos": 1, "char": "I", "riddle": "I start 'invest' — what farmers do in seeds hoping for a return." },
+            { "pos": 2, "char": "E", "riddle": "I start 'earth' — the source of every agricultural yield." },
+            { "pos": 3, "char": "L", "riddle": "I start 'labor' — the hard work behind every harvest." },
+            { "pos": 4, "char": "D", "riddle": "I start 'deliver' — what a good harvest does for a farmer." }
+        ]
     }
 ];
 
 // Expanded word list for validation
 const VALID_WORDS = [
-    // All puzzle target words
+    // All puzzle target words (original)
     "RIVER", "PLACE", "OCEAN", "TIGER", "MUSIC", "DREAM", "LIGHT", "EARTH", "STORM", "PEACE",
     "BRAVE", "SMART", "HAPPY", "SWEET", "FRESH", "QUICK", "GREEN", "BLUSH", "WATER", "FUNNY",
-    
-    // Valid jumbled words from BLUSH letters (B-L-U-S-H)
-    "BLUSH",
-    
-    // Valid jumbled words from WATER letters (W-A-T-E-R)  
-    "WATER",
-    
+    // All puzzle target words (new)
+    "FLAME", "BEACH", "STONE", "CROWN", "FROST", "PIANO", "GRAPE", "CLOUD", "BLEND", "CRISP",
+    "GLOBE", "HASTE", "IVORY", "PLUME", "RIDGE", "SWIFT", "THYME", "VALOR", "WHEAT", "YIELD",
+    // Common valid anagrams / alternate arrangements
+    "TONES", "NOTES", "ONSET", "PAGER", "REAP", "REAPS", "PARGE", "COULD", "ROWED", "LOWED",
+    "LOWER", "OWLER", "PLUME", "LUMPS", "SLUMP", "CRIBS", "GIRDS", "DINER", "GRIDE",
     // Additional valid 5-letter words
     "HEART", "WORLD", "NIGHT", "SMILE", "MAGIC", "POWER", "STORY", "DANCE", "SUNNY", "CLEAN",
-    "QUIET", "LOVELY", "BLUE", "SNAIL", "AUDIO", "DRIVE", "NAILS", "SHINE", "BEAUTY", "GRACE",
-    "HONOR", "TRUTH", "FAITH", "LOVE", "HOPE", "JOY", "PEACE", "FREEDOM", "WISDOM", "STRONG"
-]; 
+    "QUIET", "SNAIL", "DRIVE", "SHINE", "GRACE", "HONOR", "TRUTH", "FAITH", "STRONG", "FLARE",
+    "FRAME", "LEAFY", "BLAZE", "BRAVE", "STOVE", "TROVE", "CRONE", "SCONE", "CHORE", "OCHER",
+    "PARCH", "GRAPH", "GRASP", "CLASP", "BLAND", "LENDS", "FIEND", "FROWN", "GROWN", "SWORN",
+    "WORDS", "SWORD", "FROST", "SPORT", "PORTS", "PROSE", "ROPES", "PORES", "REPOS", "SPORE",
+    "STORE", "TORES", "ROTES", "VOTES", "STOVE", "CROWS", "ROWDY", "DOWRY", "WORDY", "ROWEL"
+];
 
 // Game State Variables
 let currentPuzzle = null;
@@ -311,8 +533,10 @@ const WORD_LENGTH = 5;
 const CURRENT_STATE_KEY = 'clueWordCurrentState';
 const STATISTICS_KEY = 'clueWordStatistics';
 const EPOCH_START_DATE = new Date('2025-01-01T00:00:00Z'); 
-let activeClueElement = null; 
-let activeClueData = null; 
+let activeClueElement = null;
+let activeClueData = null;
+let gameCompleted = false;
+let gameWon = false;
 
 // Statistics system
 function getStatistics() {
@@ -417,18 +641,21 @@ function initializeGame() {
         
     currentPuzzle = puzzleData[todayIndex];
 
-    const isLoaded = loadGameState(todayIndex);
-
-    if (!isLoaded) {
-        // Render from scratch if no saved state
-        renderClueBoxes();
-    } else {
-        // Re-render based on loaded state
-        reRenderClueStage();
-    }
-
+        // Render grid and keyboard first so DOM elements exist when loadGameState
+        // calls reRenderArrangementStage() or showCompletedBanner()
         renderGuessGrid();
         renderKeyboard();
+
+        const isLoaded = loadGameState(todayIndex);
+
+        if (!isLoaded) {
+            // Render from scratch if no saved state
+            renderClueBoxes();
+        } else {
+            // Re-render based on loaded state
+            reRenderClueStage();
+        }
+
         setupInputListeners();
     } catch (error) {
         handleError(error, 'initializeGame');
@@ -446,6 +673,8 @@ function saveGameState() {
         currentAttempt: currentAttempt,
         guessHistory: guessHistory,
         currentGuess: currentGuess,
+        gameCompleted: gameCompleted,
+        gameWon: gameWon,
     };
     localStorage.setItem(CURRENT_STATE_KEY, JSON.stringify(gameState));
 }
@@ -462,10 +691,15 @@ function loadGameState(todayIndex) {
             currentAttempt = state.currentAttempt;
             guessHistory = state.guessHistory;
             currentGuess = state.currentGuess;
-            
+            gameCompleted = state.gameCompleted || false;
+            gameWon = state.gameWon || false;
+
             if (revealedLetters.length === WORD_LENGTH) {
                 transitionToArrangement();
                 reRenderArrangementStage();
+                if (gameCompleted) {
+                    showCompletedBanner(gameWon);
+                }
             }
             return true;
         }
@@ -478,7 +712,7 @@ function loadGameState(todayIndex) {
 
 function renderClueBoxes() {
     const clueContainer = document.getElementById('clue-boxes');
-    const shuffledClues = currentPuzzle.clues; 
+    const shuffledClues = shuffleArray([...currentPuzzle.clues]);
 
     shuffledClues.forEach((clue, index) => {
         const button = document.createElement('button');
@@ -556,7 +790,6 @@ function checkClueAnswer() {
             setTimeout(() => {
                 revealLetter(correctLetter, activeClueElement);
                 closeModal();
-                showToast('Correct! Letter revealed!', 'success');
             }, 100);
         } else {
             feedback.textContent = `❌ Incorrect! Try again.`;
@@ -586,10 +819,9 @@ function revealLetter(letter, element) {
     try {
         if (!revealedLetters.includes(letter) || revealedLetters.filter(l => l === letter).length < currentPuzzle.target_word.split('').filter(l => l === letter).length) {
             revealedLetters.push(letter);
-            // Keep letters in the order they are revealed (no sorting)
-            
+            const newLetterIndex = revealedLetters.length - 1;
+
             const jumbleBoxes = document.querySelectorAll('.letter-placeholder, .revealed-letter-box');
-            // Update the jumble pool display with animation
             jumbleBoxes.forEach((box, index) => {
                 if (revealedLetters[index]) {
                     box.classList.remove('letter-placeholder');
@@ -602,6 +834,11 @@ function revealLetter(letter, element) {
                     }, index * 150);
                 }
             });
+
+            // Show toast after the new letter's animation completes
+            setTimeout(() => {
+                showToast('Correct! Letter revealed!', 'success');
+            }, newLetterIndex * 150 + 500);
         }
         
         // Animate the clue button
@@ -620,12 +857,13 @@ function revealLetter(letter, element) {
         saveGameState(); 
 
         if (revealedLetters.length === WORD_LENGTH) {
+            const animationDone = (WORD_LENGTH - 1) * 150 + 500;
             setTimeout(() => {
                 showToast('🎉 All clues solved! Time to arrange the letters!', 'success');
                 setTimeout(() => {
                     transitionToArrangement();
                 }, 1000);
-            }, 500);
+            }, animationDone);
         }
     } catch (error) {
         handleError(error, 'revealLetter');
@@ -645,6 +883,10 @@ function transitionToArrangement() {
     document.getElementById('arrangement-section').classList.remove('hidden');
     // Hide the jumble pool since the keyboard now represents the available letters
     document.getElementById('revealed-letters-container').classList.add('hidden');
+    // Scroll so arrangement section is in view on mobile
+    setTimeout(() => {
+        document.getElementById('arrangement-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 500);
 }
 
 function isLetterSetValid(guess, revealedLetters) {
@@ -711,8 +953,9 @@ function submitGuess(guess) {
     applyFeedbackToKeyboard(feedback);
 
     // 4. Update Game State
+    const gridAnimationDone = (WORD_LENGTH - 1) * 200 + 300;
     if (normalizedGuess === currentPuzzle.target_word) {
-        endGame(true);
+        setTimeout(() => endGame(true), gridAnimationDone);
     } else {
         currentAttempt++;
         document.getElementById('attempts-left').textContent = MAX_ATTEMPTS - currentAttempt;
@@ -793,22 +1036,46 @@ function applyFeedbackToKeyboard(feedback) {
     });
 }
 
+function showCompletedBanner(won) {
+    const banner = document.getElementById('completed-banner');
+    const icon = document.getElementById('completed-icon');
+    const title = document.getElementById('completed-title');
+    const message = document.getElementById('completed-message');
+
+    banner.classList.remove('won', 'lost');
+
+    if (won) {
+        banner.classList.add('won');
+        icon.textContent = '🎉';
+        const attempts = guessHistory.length;
+        title.textContent = 'You solved it!';
+        message.textContent = `The word was ${currentPuzzle.target_word} — solved in ${attempts} attempt${attempts === 1 ? '' : 's'}.`;
+    } else {
+        banner.classList.add('lost');
+        icon.textContent = '😔';
+        title.textContent = 'Better luck next time!';
+        message.textContent = `The word was ${currentPuzzle.target_word}.`;
+    }
+
+    banner.classList.remove('hidden');
+
+    // Disable keyboard input visually
+    const keyboard = document.getElementById('keyboard-container');
+    keyboard.style.opacity = '0.5';
+    keyboard.style.pointerEvents = 'none';
+}
+
 function endGame(win) {
     try {
-        // Update statistics first
+        gameCompleted = true;
+        gameWon = win;
+        saveGameState();
         updateStatistics(win);
-        
+        showCompletedBanner(win);
+
         if (win) {
-            // Show only stats modal for wins - no other messages
             showStatsModal();
-        } else {
-            // Show game over message for losses
-            const message = `😭 Game Over! The word was ${currentPuzzle.target_word}.`;
-            showToast(message, 'error');
         }
-        
-        // Clear state so a new puzzle loads tomorrow
-        // localStorage.removeItem(CURRENT_STATE_KEY);
     } catch (error) {
         handleError(error, 'endGame');
     }
@@ -895,7 +1162,7 @@ function setupInputListeners() {
 }
 
 function processInput(key) {
-    if (revealedLetters.length < WORD_LENGTH || currentAttempt >= MAX_ATTEMPTS) {
+    if (gameCompleted || revealedLetters.length < WORD_LENGTH || currentAttempt >= MAX_ATTEMPTS) {
         return;
     }
 
@@ -984,6 +1251,5 @@ window.onload = () => {
     // Add event listener for the submit button inside the modal
     document.getElementById('submit-clue-button').addEventListener('click', checkClueAnswer);
     document.getElementById('close-modal-button').addEventListener('click', closeModal);
-    document.getElementById('stats-button').addEventListener('click', showStatistics);
     document.getElementById('close-stats-modal').addEventListener('click', closeStatsModal);
 };
