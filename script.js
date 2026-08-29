@@ -58,447 +58,365 @@ document.head.appendChild(style);
 
 const puzzleData = [
     {
-        "day_index": 0,
-        "target_word": "RIVER",
-        "clues": [
-            { "pos": 0, "char": "R", "riddle": "The chemical symbol for **R**adon (R)." },
-            { "pos": 1, "char": "I", "riddle": "The letter that looks like a vertical line." },
-            { "pos": 2, "char": "V", "riddle": "The letter that comes immediately before **W** in the alphabet." },
-            { "pos": 3, "char": "E", "riddle": "The letter that is often silent at the end of words like 'time'." },
-            { "pos": 4, "char": "R", "riddle": "It's the letter that completes the word 'ROCKE**__**T'." }
+        day_index: 0,
+        target_word: "RIVER",
+        clues: [
+            { pos: 0, char: "R", riddle: "A current carries me downhill, bridges cross me, and eventually I may meet the sea. What am I?" },
+            { pos: 1, char: "I", riddle: "Take the first letter of the frozen crystals that fall during a winter storm." },
+            { pos: 2, char: "V", riddle: "In the word VALLEY, I am the only letter shaped like two lines meeting at a point. Which letter?" },
+            { pos: 3, char: "E", riddle: "What letter begins EAST, the direction of sunrise?" },
+            { pos: 4, char: "R", riddle: "RAIN and RAINBOW have something in common at their beginning. What letter is it?" }
         ]
     },
+
     {
-        "day_index": 1,
-        "target_word": "PLACE",
-        "clues": [
-            { "pos": 0, "char": "P", "riddle": "The first letter of a popular breakfast food (Pancake)." },
-            { "pos": 1, "char": "L", "riddle": "The letter that completes the word 'LION' (a big cat)." },
-            { "pos": 2, "char": "A", "riddle": "The first letter of the alphabet." },
-            { "pos": 3, "char": "C", "riddle": "The letter after 'B'." },
-            { "pos": 4, "char": "E", "riddle": "The first letter of the word Emergency." }
+        day_index: 1,
+        target_word: "CLOUD",
+        clues: [
+            { pos: 0, char: "C", riddle: "I can be black, white, or stormy, but I float rather than fly. What am I?" },
+            { pos: 1, char: "L", riddle: "A lion, leopard and lynx all share my starting letter. What is it?" },
+            { pos: 2, char: "O", riddle: "I begin ORBIT, the path followed by a planet around a star." },
+            { pos: 3, char: "U", riddle: "What letter begins UMBRELLA, the thing you wish you had when a cloud opens up?" },
+            { pos: 4, char: "D", riddle: "Day and night disagree about me: DAY begins with this letter. What is it?" }
         ]
     },
+
     {
-        "day_index": 2,
-        "target_word": "OCEAN",
-        "clues": [
-            { "pos": 0, "char": "O", "riddle": "The letter that looks like a circle or zero." },
-            { "pos": 1, "char": "C", "riddle": "The letter that sounds like 'sea' but is spelled differently." },
-            { "pos": 2, "char": "E", "riddle": "The most common letter in the English language." },
-            { "pos": 3, "char": "A", "riddle": "The first letter of the alphabet, also a musical note." },
-            { "pos": 4, "char": "N", "riddle": "The letter that comes after 'M' in the alphabet." }
+        day_index: 2,
+        target_word: "TIGER",
+        clues: [
+            { pos: 0, char: "T", riddle: "I have stripes, four paws, and a reputation for being the largest of the big cats. What am I?" },
+            { pos: 1, char: "I", riddle: "What letter begins ICE, the solid form of water?" },
+            { pos: 2, char: "G", riddle: "I begin GRAVITY, the invisible force that keeps your feet on Earth." },
+            { pos: 3, char: "E", riddle: "Which letter starts ELEPHANT, the animal with the unmistakable trunk?" },
+            { pos: 4, char: "R", riddle: "A rainbow starts with me, and so does the word RED. What am I?" }
         ]
     },
+
     {
-        "day_index": 3,
-        "target_word": "TIGER",
-        "clues": [
-            { "pos": 0, "char": "T", "riddle": "The letter that starts the word 'Time'." },
-            { "pos": 1, "char": "I", "riddle": "The letter that looks like a vertical line with a dot." },
-            { "pos": 2, "char": "G", "riddle": "The letter that comes after 'F' in the alphabet." },
-            { "pos": 3, "char": "E", "riddle": "The letter that completes the word 'TRE**__**'." },
-            { "pos": 4, "char": "R", "riddle": "The letter that starts the word 'Red'." }
+        day_index: 3,
+        target_word: "DREAM",
+        clues: [
+            { pos: 0, char: "D", riddle: "I happen in your head while you sleep and can be impossible, frightening, or wonderful. What am I?" },
+            { pos: 1, char: "R", riddle: "What letter begins RIDDLE, something you are solving right now?" },
+            { pos: 2, char: "E", riddle: "I begin ECHO, the sound that answers you from a distant wall." },
+            { pos: 3, char: "A", riddle: "Apple, astronaut and adventure all begin with the same letter. Which one?" },
+            { pos: 4, char: "M", riddle: "What letter begins MIRROR, the thing that copies your reflection?" }
         ]
     },
+
     {
-        "day_index": 4,
-        "target_word": "MUSIC",
-        "clues": [
-            { "pos": 0, "char": "M", "riddle": "The letter that looks like two mountains." },
-            { "pos": 1, "char": "U", "riddle": "The letter that looks like a horseshoe." },
-            { "pos": 2, "char": "S", "riddle": "The letter that looks like a snake." },
-            { "pos": 3, "char": "I", "riddle": "The letter that looks like a vertical line." },
-            { "pos": 4, "char": "C", "riddle": "The letter that sounds like 'see' but is spelled differently." }
+        day_index: 4,
+        target_word: "FLAME",
+        clues: [
+            { pos: 0, char: "F", riddle: "I dance above a candle, need oxygen, and disappear when the fire goes out. What am I?" },
+            { pos: 1, char: "L", riddle: "Take the first letter of LAVA, molten rock escaping a volcano." },
+            { pos: 2, char: "A", riddle: "I begin ASH, what remains after something burns completely." },
+            { pos: 3, char: "M", riddle: "Moon, mountain and mystery all begin with me. Which letter?" },
+            { pos: 4, char: "E", riddle: "What letter begins EMBER, the glowing piece of wood left after a fire?" }
         ]
     },
+
     {
-        "day_index": 5,
-        "target_word": "DREAM",
-        "clues": [
-            { "pos": 0, "char": "D", "riddle": "The letter that comes after 'C' in the alphabet." },
-            { "pos": 1, "char": "R", "riddle": "The letter that starts the word 'Rainbow'." },
-            { "pos": 2, "char": "E", "riddle": "The letter that completes the word 'TH**__**'." },
-            { "pos": 3, "char": "A", "riddle": "The letter that starts the word 'Apple'." },
-            { "pos": 4, "char": "M", "riddle": "The letter that looks like two mountains." }
+        day_index: 5,
+        target_word: "BEACH",
+        clues: [
+            { pos: 0, char: "B", riddle: "I am the sandy edge where land meets the sea. What am I?" },
+            { pos: 1, char: "E", riddle: "Which letter starts EBB, when the tide moves away from shore?" },
+            { pos: 2, char: "A", riddle: "I begin ANCHOR, the heavy object that keeps a boat from drifting." },
+            { pos: 3, char: "C", riddle: "What letter begins CORAL, home to countless creatures beneath warm seas?" },
+            { pos: 4, char: "H", riddle: "I begin HORIZON, where the sky appears to meet the sea." }
         ]
     },
+
     {
-        "day_index": 6,
-        "target_word": "LIGHT",
-        "clues": [
-            { "pos": 0, "char": "L", "riddle": "The letter that looks like a vertical line with a horizontal line at the bottom." },
-            { "pos": 1, "char": "I", "riddle": "The letter that looks like a vertical line with a dot." },
-            { "pos": 2, "char": "G", "riddle": "The letter that comes after 'F' in the alphabet." },
-            { "pos": 3, "char": "H", "riddle": "The letter that looks like a ladder." },
-            { "pos": 4, "char": "T", "riddle": "The letter that looks like a cross." }
+        day_index: 6,
+        target_word: "STORM",
+        clues: [
+            { pos: 0, char: "S", riddle: "Thunder, lightning, heavy rain and strong winds can all arrive with me. What am I?" },
+            { pos: 1, char: "T", riddle: "What letter begins THUNDER, the sound that follows lightning?" },
+            { pos: 2, char: "O", riddle: "I begin OCEAN, the enormous body of salt water covering much of Earth." },
+            { pos: 3, char: "R", riddle: "RAIN starts with me, and rain is one of a storm's favorite ingredients." },
+            { pos: 4, char: "M", riddle: "What letter begins MONSOON, a seasonal wind system famous for heavy rain?" }
         ]
     },
+
     {
-        "day_index": 7,
-        "target_word": "EARTH",
-        "clues": [
-            { "pos": 0, "char": "E", "riddle": "The most common letter in English." },
-            { "pos": 1, "char": "A", "riddle": "The first letter of the alphabet." },
-            { "pos": 2, "char": "R", "riddle": "The letter that starts the word 'Red'." },
-            { "pos": 3, "char": "T", "riddle": "The letter that looks like a cross." },
-            { "pos": 4, "char": "H", "riddle": "The letter that looks like a ladder." }
+        day_index: 7,
+        target_word: "PIANO",
+        clues: [
+            { pos: 0, char: "P", riddle: "I have black and white keys, but no locks. What instrument am I?" },
+            { pos: 1, char: "I", riddle: "I begin INSTRUMENT, something you can use to make music." },
+            { pos: 2, char: "A", riddle: "What letter begins ARPEGGIO, when the notes of a chord are played one after another?" },
+            { pos: 3, char: "N", riddle: "I begin NOTE, a single sound or written symbol in music." },
+            { pos: 4, char: "O", riddle: "What letter begins OCTAVE, the musical interval spanning eight notes?" }
         ]
     },
+
     {
-        "day_index": 8,
-        "target_word": "STORM",
-        "clues": [
-            { "pos": 0, "char": "S", "riddle": "The letter that looks like a snake." },
-            { "pos": 1, "char": "T", "riddle": "The letter that looks like a cross." },
-            { "pos": 2, "char": "O", "riddle": "The letter that looks like a circle." },
-            { "pos": 3, "char": "R", "riddle": "The letter that starts the word 'Rain'." },
-            { "pos": 4, "char": "M", "riddle": "The letter that looks like two mountains." }
+        day_index: 8,
+        target_word: "SHARK",
+        clues: [
+            { pos: 0, char: "S", riddle: "I have lived in Earth's oceans for hundreds of millions of years and have rows of teeth. What am I?" },
+            { pos: 1, char: "H", riddle: "What letter begins HUNGRY, something this predator is often portrayed as?" },
+            { pos: 2, char: "A", riddle: "I begin AQUATIC, a word describing something that lives in water." },
+            { pos: 3, char: "R", riddle: "What letter begins REEF, a place where many ocean creatures live?" },
+            { pos: 4, char: "K", riddle: "I begin KELP, the giant seaweed found in some cold coastal waters." }
         ]
     },
+
     {
-        "day_index": 9,
-        "target_word": "PEACE",
-        "clues": [
-            { "pos": 0, "char": "P", "riddle": "The letter that starts the word 'Peace'." },
-            { "pos": 1, "char": "E", "riddle": "The most common letter in English." },
-            { "pos": 2, "char": "A", "riddle": "The first letter of the alphabet." },
-            { "pos": 3, "char": "C", "riddle": "The letter that comes after 'B'." },
-            { "pos": 4, "char": "E", "riddle": "The letter that completes the word 'PEAC**__**'." }
+        day_index: 9,
+        target_word: "MAGIC",
+        clues: [
+            { pos: 0, char: "M", riddle: "A magician pulls rabbits from hats, makes objects disappear, and claims to do this. What is it?" },
+            { pos: 1, char: "A", riddle: "I begin ALCHEMY, the legendary attempt to transform ordinary materials into precious ones." },
+            { pos: 2, char: "G", riddle: "What letter begins GLIMMER, a faint magical-looking shine?" },
+            { pos: 3, char: "I", riddle: "I begin ILLUSION, something that looks real but isn't." },
+            { pos: 4, char: "C", riddle: "What letter begins CAST, as in the spell a wizard might cast?" }
         ]
     },
+
     {
-        "day_index": 10,
-        "target_word": "BRAVE",
-        "clues": [
-            { "pos": 0, "char": "B", "riddle": "The letter that comes after 'A' in the alphabet." },
-            { "pos": 1, "char": "R", "riddle": "The letter that starts the word 'Red'." },
-            { "pos": 2, "char": "A", "riddle": "The first letter of the alphabet." },
-            { "pos": 3, "char": "V", "riddle": "The letter that comes before 'W' in the alphabet." },
-            { "pos": 4, "char": "E", "riddle": "The most common letter in English." }
+        day_index: 10,
+        target_word: "HEART",
+        clues: [
+            { pos: 0, char: "H", riddle: "I beat thousands of times a day without you having to think about it. What organ am I?" },
+            { pos: 1, char: "E", riddle: "I begin EMOTION, something strongly connected with the heart in everyday language." },
+            { pos: 2, char: "A", riddle: "What letter begins ARTERY, a vessel carrying blood away from the heart?" },
+            { pos: 3, char: "R", riddle: "I begin RHYTHM, something your heartbeat has." },
+            { pos: 4, char: "T", riddle: "What letter begins THROB, a word describing a strong rhythmic beat?" }
         ]
     },
+
     {
-        "day_index": 11,
-        "target_word": "SMART",
-        "clues": [
-            { "pos": 0, "char": "S", "riddle": "The letter that looks like a snake." },
-            { "pos": 1, "char": "M", "riddle": "The letter that looks like two mountains." },
-            { "pos": 2, "char": "A", "riddle": "The first letter of the alphabet." },
-            { "pos": 3, "char": "R", "riddle": "The letter that starts the word 'Red'." },
-            { "pos": 4, "char": "T", "riddle": "The letter that looks like a cross." }
+        day_index: 11,
+        target_word: "SPACE",
+        clues: [
+            { pos: 0, char: "S", riddle: "No air, no ordinary ground, countless stars — astronauts travel through me. What am I?" },
+            { pos: 1, char: "P", riddle: "I begin PLANET, a world orbiting a star." },
+            { pos: 2, char: "A", riddle: "What letter begins ASTRONAUT, someone trained to travel beyond Earth?" },
+            { pos: 3, char: "C", riddle: "I begin COSMOS, everything that exists in the universe." },
+            { pos: 4, char: "E", riddle: "What letter begins ECLIPSE, when one celestial body blocks another from view?" }
         ]
     },
+
     {
-        "day_index": 12,
-        "target_word": "HAPPY",
-        "clues": [
-            { "pos": 0, "char": "H", "riddle": "The letter that looks like a ladder." },
-            { "pos": 1, "char": "A", "riddle": "The first letter of the alphabet." },
-            { "pos": 2, "char": "P", "riddle": "The letter that starts the word 'Peace'." },
-            { "pos": 3, "char": "P", "riddle": "The letter that starts the word 'Peace' (again)." },
-            { "pos": 4, "char": "Y", "riddle": "The letter that looks like a fork in the road." }
+        day_index: 12,
+        target_word: "TRAIN",
+        clues: [
+            { pos: 0, char: "T", riddle: "I have carriages, run on tracks, and can carry hundreds of passengers. What am I?" },
+            { pos: 1, char: "R", riddle: "What letter begins RAIL, the metal track I travel on?" },
+            { pos: 2, char: "A", riddle: "I begin ARRIVAL, the moment a train reaches its destination." },
+            { pos: 3, char: "I", riddle: "I begin INTERCITY, describing a train journey between cities." },
+            { pos: 4, char: "N", riddle: "What letter begins NIGHT, when sleeper trains are often busiest?" }
         ]
     },
+
     {
-        "day_index": 13,
-        "target_word": "SWEET",
-        "clues": [
-            { "pos": 0, "char": "S", "riddle": "The letter that looks like a snake." },
-            { "pos": 1, "char": "W", "riddle": "The letter that comes after 'V' in the alphabet." },
-            { "pos": 2, "char": "E", "riddle": "The most common letter in English." },
-            { "pos": 3, "char": "E", "riddle": "The most common letter in English (again)." },
-            { "pos": 4, "char": "T", "riddle": "The letter that looks like a cross." }
+        day_index: 13,
+        target_word: "GREEN",
+        clues: [
+            { pos: 0, char: "G", riddle: "Grass, many leaves, and an unripe banana can share this color. What color?" },
+            { pos: 1, char: "R", riddle: "I begin RAIN, something plants often need to stay green." },
+            { pos: 2, char: "E", riddle: "What letter begins ENVY, an emotion traditionally represented by this color?" },
+            { pos: 3, char: "E", riddle: "I begin EMERALD, a gemstone famous for its rich green color." },
+            { pos: 4, char: "N", riddle: "What letter begins NATURE, where you can find green almost everywhere?" }
         ]
     },
+
     {
-        "day_index": 14,
-        "target_word": "FRESH",
-        "clues": [
-            { "pos": 0, "char": "F", "riddle": "The letter that comes after 'E' in the alphabet." },
-            { "pos": 1, "char": "R", "riddle": "The letter that starts the word 'Red'." },
-            { "pos": 2, "char": "E", "riddle": "The most common letter in English." },
-            { "pos": 3, "char": "S", "riddle": "The letter that looks like a snake." },
-            { "pos": 4, "char": "H", "riddle": "The letter that looks like a ladder." }
+        day_index: 14,
+        target_word: "GHOST",
+        clues: [
+            { pos: 0, char: "G", riddle: "Folklore says I may haunt an old house after death. What am I?" },
+            { pos: 1, char: "H", riddle: "I begin HAUNTED, a word often used for a place supposedly visited by spirits." },
+            { pos: 2, char: "O", riddle: "What letter begins OUIJA, a board associated with supposed communication with spirits?" },
+            { pos: 3, char: "S", riddle: "I begin SPIRIT, a supernatural being in many traditions." },
+            { pos: 4, char: "T", riddle: "What letter begins TOMB, a place where the dead may be buried?" }
         ]
     },
+
     {
-        "day_index": 15,
-        "target_word": "QUICK",
-        "clues": [
-            { "pos": 0, "char": "Q", "riddle": "The letter that is always followed by 'U'." },
-            { "pos": 1, "char": "U", "riddle": "The letter that looks like a horseshoe." },
-            { "pos": 2, "char": "I", "riddle": "The letter that looks like a vertical line with a dot." },
-            { "pos": 3, "char": "C", "riddle": "The letter that comes after 'B'." },
-            { "pos": 4, "char": "K", "riddle": "The letter that comes after 'J' in the alphabet." }
+        day_index: 15,
+        target_word: "BRAIN",
+        clues: [
+            { pos: 0, char: "B", riddle: "I control thought, memory, movement and much of what makes you you. What organ am I?" },
+            { pos: 1, char: "R", riddle: "I begin REASON, one ability associated with the human mind." },
+            { pos: 2, char: "A", riddle: "What letter begins AWARENESS, the ability to perceive what is happening around you?" },
+            { pos: 3, char: "I", riddle: "I begin IDEA, something that can suddenly appear in your mind." },
+            { pos: 4, char: "N", riddle: "What letter begins NEURON, a cell that carries signals in the nervous system?" }
         ]
     },
+
     {
-        "day_index": 16,
-        "target_word": "GREEN",
-        "clues": [
-            { "pos": 0, "char": "G", "riddle": "I'm the first letter of the color of grass and envy." },
-            { "pos": 1, "char": "R", "riddle": "I start the word for the color of roses and sunsets." },
-            { "pos": 2, "char": "E", "riddle": "I appear in almost every English word, but I'm silent in 'queue'." },
-            { "pos": 3, "char": "E", "riddle": "I'm the letter that makes 'bee' buzz and 'tree' grow." },
-            { "pos": 4, "char": "N", "riddle": "I'm the letter that comes between 'M' and 'O' in the alphabet." }
+        day_index: 16,
+        target_word: "ROBOT",
+        clues: [
+            { pos: 0, char: "R", riddle: "I can be programmed to perform tasks automatically and may look surprisingly human. What am I?" },
+            { pos: 1, char: "O", riddle: "I begin OPERATE, what a machine does when it is functioning." },
+            { pos: 2, char: "B", riddle: "What letter begins BOT, a short form commonly used for an automated program?" },
+            { pos: 3, char: "O", riddle: "I begin OUTPUT, what a computer or machine produces after processing something." },
+            { pos: 4, char: "T", riddle: "What letter begins TECHNOLOGY, the field that makes machines like me possible?" }
         ]
     },
+
     {
-        "day_index": 17,
-        "target_word": "BLUSH",
-        "clues": [
-            { "pos": 2, "char": "U", "riddle": "I'm shaped like a smile, but I'm not happy - I'm just a letter." },
-            { "pos": 4, "char": "H", "riddle": "I'm the letter that makes 'heart' happy and 'hope' happen." },
-            { "pos": 0, "char": "B", "riddle": "I'm the letter that makes 'beautiful' bloom and 'blush' begin." },
-            { "pos": 3, "char": "S", "riddle": "I'm the letter that makes 'sunshine' sparkle and 'stars' shine." },
-            { "pos": 1, "char": "L", "riddle": "I'm the letter that makes 'love' last and 'light' shine." }
+        day_index: 17,
+        target_word: "FLUTE",
+        clues: [
+            { pos: 0, char: "F", riddle: "I am a wind instrument with holes that you cover with your fingers. What am I?" },
+            { pos: 1, char: "L", riddle: "I begin LUTE, an old stringed instrument whose name sounds suspiciously close to today's answer." },
+            { pos: 2, char: "U", riddle: "What letter begins UPPER, the part of your body where you might hold a flute near your mouth?" },
+            { pos: 3, char: "T", riddle: "I begin TUNE, something a flute can play." },
+            { pos: 4, char: "E", riddle: "What letter begins ENSEMBLE, a group of musicians playing together?" }
         ]
     },
+
     {
-        "day_index": 18,
-        "target_word": "WATER",
-        "clues": [
-            { "pos": 3, "char": "E", "riddle": "I'm so common that I appear in 'every' word, even this one!" },
-            { "pos": 1, "char": "A", "riddle": "I'm the beginning of everything, the first sound you make." },
-            { "pos": 4, "char": "R", "riddle": "I'm the letter that makes 'rain' fall and 'rivers' flow." },
-            { "pos": 0, "char": "W", "riddle": "I'm the letter that makes waves and whispers in the wind." },
-            { "pos": 2, "char": "T", "riddle": "I'm the letter that makes 'time' tick and 'tree' tall." }
+        day_index: 18,
+        target_word: "CROWN",
+        clues: [
+            { pos: 0, char: "C", riddle: "A king or queen may wear me as a symbol of authority. What am I?" },
+            { pos: 1, char: "R", riddle: "I begin ROYAL, describing something connected with a king or queen." },
+            { pos: 2, char: "O", riddle: "What letter begins ORNAMENT, something decorative that a crown can contain?" },
+            { pos: 3, char: "W", riddle: "I begin WEAR, what a monarch may do with a crown." },
+            { pos: 4, char: "N", riddle: "What letter begins NOBLE, a word associated with aristocracy?" }
         ]
     },
+
     {
-        "day_index": 19,
-        "target_word": "FUNNY",
-        "clues": [
-            { "pos": 0, "char": "F", "riddle": "The letter that comes after 'E' in the alphabet." },
-            { "pos": 1, "char": "U", "riddle": "The letter that looks like a horseshoe." },
-            { "pos": 2, "char": "N", "riddle": "The letter that comes after 'M' in the alphabet." },
-            { "pos": 3, "char": "N", "riddle": "The letter that comes after 'M' in the alphabet (again)." },
-            { "pos": 4, "char": "Y", "riddle": "The letter that looks like a fork in the road." }
+        day_index: 19,
+        target_word: "LIGHT",
+        clues: [
+            { pos: 0, char: "L", riddle: "I let you see in darkness, can come from a bulb, and travels extremely fast. What am I?" },
+            { pos: 1, char: "I", riddle: "I begin ILLUMINATE, meaning to provide light." },
+            { pos: 2, char: "G", riddle: "What letter begins GLOW, the soft light produced by something warm or luminous?" },
+            { pos: 3, char: "H", riddle: "I begin HALO, a ring of light often shown around the heads of saints." },
+            { pos: 4, char: "T", riddle: "What letter begins TORCH, a portable source of light?" }
         ]
     },
+
     {
-        "day_index": 20,
-        "target_word": "FLAME",
-        "clues": [
-            { "pos": 0, "char": "F", "riddle": "I start the word for fire's flickering light." },
-            { "pos": 1, "char": "L", "riddle": "I start 'laughter' — the sound of joy." },
-            { "pos": 2, "char": "A", "riddle": "I'm the first letter of the alphabet and the first vowel." },
-            { "pos": 3, "char": "M", "riddle": "I start 'midnight' — the darkest, quietest hour." },
-            { "pos": 4, "char": "E", "riddle": "I'm the most common letter in English, found in nearly every sentence." }
+        day_index: 20,
+        target_word: "EAGLE",
+        clues: [
+            { pos: 0, char: "E", riddle: "I soar high above the ground, have powerful talons, and am known for excellent eyesight. What bird am I?" },
+            { pos: 1, char: "A", riddle: "I begin AERIAL, meaning related to the air." },
+            { pos: 2, char: "G", riddle: "What letter begins GLIDE, how an eagle can move through the air without flapping?" },
+            { pos: 3, char: "L", riddle: "I begin LOFTY, meaning high above the ground." },
+            { pos: 4, char: "E", riddle: "What letter begins EYRIE, the high nest of a bird of prey?" }
         ]
     },
+
     {
-        "day_index": 21,
-        "target_word": "BEACH",
-        "clues": [
-            { "pos": 0, "char": "B", "riddle": "I start 'breeze' — the gentle wind that cools a warm day." },
-            { "pos": 1, "char": "E", "riddle": "I start 'east' — where the sun rises over the water." },
-            { "pos": 2, "char": "A", "riddle": "I'm the vowel that sounds like the 'ah' of relaxation." },
-            { "pos": 3, "char": "C", "riddle": "I sound like 'sea' but I'm spelled differently." },
-            { "pos": 4, "char": "H", "riddle": "I start 'horizon' — the line where sky meets water." }
+        day_index: 21,
+        target_word: "FROST",
+        clues: [
+            { pos: 0, char: "F", riddle: "I cover grass and windows with tiny ice crystals on very cold mornings. What am I?" },
+            { pos: 1, char: "R", riddle: "I begin RIME, a coating of ice formed from freezing fog or mist." },
+            { pos: 2, char: "O", riddle: "What letter begins OVERNIGHT, when frost often forms?" },
+            { pos: 3, char: "S", riddle: "I begin SNOW, another form of frozen water falling from the sky." },
+            { pos: 4, char: "T", riddle: "What letter begins TEMPERATURE, the measurement that tells us how cold it is?" }
         ]
     },
+
     {
-        "day_index": 22,
-        "target_word": "STONE",
-        "clues": [
-            { "pos": 0, "char": "S", "riddle": "I start 'solid' — the state of matter that holds its shape." },
-            { "pos": 1, "char": "T", "riddle": "I start 'tough' — the quality of something hard and durable." },
-            { "pos": 2, "char": "O", "riddle": "I look like a cross-section of a rock — perfectly round." },
-            { "pos": 3, "char": "N", "riddle": "I start 'nature' — where stones are found scattered and ancient." },
-            { "pos": 4, "char": "E", "riddle": "I end 'home', 'dome', and many words that stand firm." }
+        day_index: 22,
+        target_word: "SMILE",
+        clues: [
+            { pos: 0, char: "S", riddle: "I curve across your face when you're happy, amused, or trying to look friendly. What am I?" },
+            { pos: 1, char: "M", riddle: "I begin MIRTH, an old-fashioned word for cheerful amusement." },
+            { pos: 2, char: "I", riddle: "What letter begins IRONY, something that can make people smile when the unexpected happens?" },
+            { pos: 3, char: "L", riddle: "I begin LAUGH, something often accompanying a genuine smile." },
+            { pos: 4, char: "E", riddle: "What letter begins ENJOYMENT, the feeling behind many smiles?" }
         ]
     },
+
     {
-        "day_index": 23,
-        "target_word": "CROWN",
-        "clues": [
-            { "pos": 0, "char": "C", "riddle": "I start 'ceremony' — the formal event where a crown is bestowed." },
-            { "pos": 1, "char": "R", "riddle": "I start 'royal' — the status of those who wear crowns." },
-            { "pos": 2, "char": "O", "riddle": "I'm shaped like the band of a crown — round and unbroken." },
-            { "pos": 3, "char": "W", "riddle": "I start 'wear' — what you do with a crown on your head." },
-            { "pos": 4, "char": "N", "riddle": "I start 'noble' — the rank of those born to rule." }
+        day_index: 23,
+        target_word: "GRAPE",
+        clues: [
+            { pos: 0, char: "G", riddle: "I grow in bunches on vines and can be turned into raisins or juice. What fruit am I?" },
+            { pos: 1, char: "R", riddle: "I begin RAISIN, what a grape becomes after losing most of its water." },
+            { pos: 2, char: "A", riddle: "What letter begins ARBOR, a structure that can support grapevines?" },
+            { pos: 3, char: "P", riddle: "I begin PURPLE, a common color for this fruit." },
+            { pos: 4, char: "E", riddle: "What letter begins EAT, something you can do with a grape?" }
         ]
     },
+
     {
-        "day_index": 24,
-        "target_word": "FROST",
-        "clues": [
-            { "pos": 0, "char": "F", "riddle": "I start 'freeze' — what happens to water on a cold night." },
-            { "pos": 1, "char": "R", "riddle": "I start 'rigid' — how things become when frozen solid." },
-            { "pos": 2, "char": "O", "riddle": "I start 'October' — often the first month of frosty mornings." },
-            { "pos": 3, "char": "S", "riddle": "I start 'snow' — the frozen cousin of frost." },
-            { "pos": 4, "char": "T", "riddle": "I start 'temperature' — which drops when frost forms." }
+        day_index: 24,
+        target_word: "SHOES",
+        clues: [
+            { pos: 0, char: "S", riddle: "I protect your feet while walking, running, or playing sports. What am I?" },
+            { pos: 1, char: "H", riddle: "I begin HEEL, the raised or rear part of footwear." },
+            { pos: 2, char: "O", riddle: "What letter begins OUTDOOR, where sturdy shoes often become useful?" },
+            { pos: 3, char: "E", riddle: "I begin ELASTIC, material sometimes used in shoe laces or bands." },
+            { pos: 4, char: "S", riddle: "What letter begins SOLE, the bottom part of a shoe?" }
         ]
     },
+
     {
-        "day_index": 25,
-        "target_word": "PIANO",
-        "clues": [
-            { "pos": 0, "char": "P", "riddle": "I start 'play' — what musicians do with their instrument." },
-            { "pos": 1, "char": "I", "riddle": "I stand alone as a word — the simplest pronoun." },
-            { "pos": 2, "char": "A", "riddle": "I'm the musical note that orchestras tune to — concert pitch." },
-            { "pos": 3, "char": "N", "riddle": "I start 'note' — the building block of every melody." },
-            { "pos": 4, "char": "O", "riddle": "I start 'octave' — eight notes that span a musical scale." }
+        day_index: 25,
+        target_word: "TOWER",
+        clues: [
+            { pos: 0, char: "T", riddle: "I rise high above the ground and can contain bells, clocks, or observation decks. What am I?" },
+            { pos: 1, char: "O", riddle: "I begin OBSERVATION, something you might do from the top of a tower." },
+            { pos: 2, char: "W", riddle: "What letter begins WIND, something strong towers must withstand?" },
+            { pos: 3, char: "E", riddle: "I begin ELEVATOR, a machine that can carry you to a tower's upper floors." },
+            { pos: 4, char: "R", riddle: "What letter begins ROOFTOP, the highest exterior part of many buildings?" }
         ]
     },
+
     {
-        "day_index": 26,
-        "target_word": "GRAPE",
-        "clues": [
-            { "pos": 0, "char": "G", "riddle": "I start 'grow' — what vines do in a vineyard." },
-            { "pos": 1, "char": "R", "riddle": "I start 'ripe' — the perfect state for picking fruit." },
-            { "pos": 2, "char": "A", "riddle": "I start 'autumn' — the season of harvest and wine-making." },
-            { "pos": 3, "char": "P", "riddle": "I start 'purple' — the color of many dark grapes." },
-            { "pos": 4, "char": "E", "riddle": "I start 'eat' — the final destination of fresh-picked fruit." }
+        day_index: 26,
+        target_word: "OASIS",
+        clues: [
+            { pos: 0, char: "O", riddle: "I am a fertile place with water and plants surrounded by desert. What am I?" },
+            { pos: 1, char: "A", riddle: "I begin ARID, describing land with very little rainfall." },
+            { pos: 2, char: "S", riddle: "What letter begins SAND, the material covering much of a desert?" },
+            { pos: 3, char: "I", riddle: "I begin IRRIGATION, bringing water to dry land." },
+            { pos: 4, char: "S", riddle: "What letter begins SPRING, a natural source of water that can create an oasis?" }
         ]
     },
+
     {
-        "day_index": 27,
-        "target_word": "CLOUD",
-        "clues": [
-            { "pos": 0, "char": "C", "riddle": "I start 'cover' — what clouds do to the sun on a gray day." },
-            { "pos": 1, "char": "L", "riddle": "I start 'loom' — what storm clouds do on the horizon." },
-            { "pos": 2, "char": "O", "riddle": "I look like a puffy cloud seen from below — round and open." },
-            { "pos": 3, "char": "U", "riddle": "I start 'umbrella' — what you need when clouds bring rain." },
-            { "pos": 4, "char": "D", "riddle": "I start 'drizzle' — the light rain that follows a gray cloud." }
+        day_index: 27,
+        target_word: "QUEST",
+        clues: [
+            { pos: 0, char: "Q", riddle: "A knight in a fantasy story might undertake me to find treasure, rescue someone, or defeat a villain. What am I?" },
+            { pos: 1, char: "U", riddle: "I begin UNKNOWN, exactly what an adventurer may encounter during a quest." },
+            { pos: 2, char: "E", riddle: "What letter begins EXPLORE, something you do during an adventure?" },
+            { pos: 3, char: "S", riddle: "I begin SWORD, a classic weapon carried by fantasy adventurers." },
+            { pos: 4, char: "T", riddle: "What letter begins TREASURE, something many quests are designed to find?" }
         ]
     },
+
     {
-        "day_index": 28,
-        "target_word": "BLEND",
-        "clues": [
-            { "pos": 0, "char": "B", "riddle": "I start 'beat' — what you do to mix ingredients together." },
-            { "pos": 1, "char": "L", "riddle": "I start 'liquid' — one state of matter that mixes easily." },
-            { "pos": 2, "char": "E", "riddle": "I start 'even' — what a perfect blend achieves throughout." },
-            { "pos": 3, "char": "N", "riddle": "I start 'neutral' — the balance point where flavors meet." },
-            { "pos": 4, "char": "D", "riddle": "I start 'dissolve' — to mix until no separation remains." }
+        day_index: 28,
+        target_word: "SPACE",
+        clues: [
+            { pos: 0, char: "S", riddle: "I am the final frontier in many science-fiction stories. What am I?" },
+            { pos: 1, char: "P", riddle: "I begin PROBE, an unmanned spacecraft sent to investigate distant worlds." },
+            { pos: 2, char: "A", riddle: "What letter begins ASTEROID, a rocky object orbiting the Sun?" },
+            { pos: 3, char: "C", riddle: "I begin COMET, an icy object that can develop a glowing tail near the Sun." },
+            { pos: 4, char: "E", riddle: "What letter begins EXOPLANET, a planet orbiting a star beyond our Sun?" }
         ]
     },
+
     {
-        "day_index": 29,
-        "target_word": "CRISP",
-        "clues": [
-            { "pos": 0, "char": "C", "riddle": "I start 'cold' — the feeling of a brisk autumn morning." },
-            { "pos": 1, "char": "R", "riddle": "I start 'rustle' — the sound of dry leaves underfoot." },
-            { "pos": 2, "char": "I", "riddle": "I start 'ice' — which makes things cold and crisp." },
-            { "pos": 3, "char": "S", "riddle": "I start 'snap' — the sound of something perfectly firm and fresh." },
-            { "pos": 4, "char": "P", "riddle": "I start 'potato' — which becomes crispy when fried or baked." }
-        ]
-    },
-    {
-        "day_index": 30,
-        "target_word": "GLOBE",
-        "clues": [
-            { "pos": 0, "char": "G", "riddle": "I start 'geography' — the study of our round world." },
-            { "pos": 1, "char": "L", "riddle": "I start 'latitude' — the lines that circle the globe horizontally." },
-            { "pos": 2, "char": "O", "riddle": "I'm round like the Earth itself — a perfect sphere in letter form." },
-            { "pos": 3, "char": "B", "riddle": "I start 'border' — the lines that divide countries on a globe." },
-            { "pos": 4, "char": "E", "riddle": "I start 'equator' — the imaginary line around the middle of the globe." }
-        ]
-    },
-    {
-        "day_index": 31,
-        "target_word": "HASTE",
-        "clues": [
-            { "pos": 0, "char": "H", "riddle": "I start 'hurry' — the state of moving faster than comfortable." },
-            { "pos": 1, "char": "A", "riddle": "I start 'alarm' — what goes off when you've overslept." },
-            { "pos": 2, "char": "S", "riddle": "I start 'speed' — the key quality of someone in a rush." },
-            { "pos": 3, "char": "T", "riddle": "I start 'time' — the thing you run out of when moving in haste." },
-            { "pos": 4, "char": "E", "riddle": "I start 'exit' — the way out when you need to leave in a hurry." }
-        ]
-    },
-    {
-        "day_index": 32,
-        "target_word": "IVORY",
-        "clues": [
-            { "pos": 0, "char": "I", "riddle": "I start 'immaculate' — the pure white quality of ivory." },
-            { "pos": 1, "char": "V", "riddle": "I start 'valuable' — the quality that makes ivory so precious." },
-            { "pos": 2, "char": "O", "riddle": "I start 'old' — ivory has been prized since ancient times." },
-            { "pos": 3, "char": "R", "riddle": "I start 'rare' — something precious and increasingly protected." },
-            { "pos": 4, "char": "Y", "riddle": "I ask a question — I start 'why'." }
-        ]
-    },
-    {
-        "day_index": 33,
-        "target_word": "PLUME",
-        "clues": [
-            { "pos": 0, "char": "P", "riddle": "I start 'proud' — like a peacock displaying its magnificent feathers." },
-            { "pos": 1, "char": "L", "riddle": "I start 'light' — feathers are among the lightest things in nature." },
-            { "pos": 2, "char": "U", "riddle": "I start 'up' — the direction a feathered plume waves." },
-            { "pos": 3, "char": "M", "riddle": "I start 'magnificent' — how a full plume of feathers looks." },
-            { "pos": 4, "char": "E", "riddle": "I start 'elegant' — the quality of a flowing plume." }
-        ]
-    },
-    {
-        "day_index": 34,
-        "target_word": "RIDGE",
-        "clues": [
-            { "pos": 0, "char": "R", "riddle": "I start 'rocky' — the texture of a mountain ridge." },
-            { "pos": 1, "char": "I", "riddle": "I start 'incline' — the slope leading up to a ridge." },
-            { "pos": 2, "char": "D", "riddle": "I start 'dramatic' — the view from atop a high ridge." },
-            { "pos": 3, "char": "G", "riddle": "I start 'granite' — the rock that often forms mountain ridges." },
-            { "pos": 4, "char": "E", "riddle": "I start 'elevation' — the height of a mountain ridge above sea level." }
-        ]
-    },
-    {
-        "day_index": 35,
-        "target_word": "SWIFT",
-        "clues": [
-            { "pos": 0, "char": "S", "riddle": "I start 'speed' — the quality of something that moves swiftly." },
-            { "pos": 1, "char": "W", "riddle": "I start 'wind' — which moves swiftly across the landscape." },
-            { "pos": 2, "char": "I", "riddle": "I start 'instant' — something that happens in the blink of an eye." },
-            { "pos": 3, "char": "F", "riddle": "I start 'fast' — the synonym for swift." },
-            { "pos": 4, "char": "T", "riddle": "I start 'tornado' — one of nature's swiftest and most powerful forces." }
-        ]
-    },
-    {
-        "day_index": 36,
-        "target_word": "THYME",
-        "clues": [
-            { "pos": 0, "char": "T", "riddle": "I start 'taste' — the quality herbs add to any dish." },
-            { "pos": 1, "char": "H", "riddle": "I start 'herb' — the category this fragrant plant belongs to." },
-            { "pos": 2, "char": "Y", "riddle": "I start 'yard' — often where herb gardens grow." },
-            { "pos": 3, "char": "M", "riddle": "I start 'Mediterranean' — the region where thyme grows wild on hillsides." },
-            { "pos": 4, "char": "E", "riddle": "I start 'earthy' — the quality of thyme's rich aroma." }
-        ]
-    },
-    {
-        "day_index": 37,
-        "target_word": "VALOR",
-        "clues": [
-            { "pos": 0, "char": "V", "riddle": "I start 'victory' — the reward for those who show valor in battle." },
-            { "pos": 1, "char": "A", "riddle": "I start 'armor' — what a valorous knight wears into battle." },
-            { "pos": 2, "char": "L", "riddle": "I start 'loyalty' — the companion virtue of valor." },
-            { "pos": 3, "char": "O", "riddle": "I start 'oath' — the solemn promise to be brave and true." },
-            { "pos": 4, "char": "R", "riddle": "I start 'righteous' — the quality that makes valor noble." }
-        ]
-    },
-    {
-        "day_index": 38,
-        "target_word": "WHEAT",
-        "clues": [
-            { "pos": 0, "char": "W", "riddle": "I start 'waves' — like golden wheat fields swaying in the breeze." },
-            { "pos": 1, "char": "H", "riddle": "I start 'harvest' — the season when wheat is gathered." },
-            { "pos": 2, "char": "E", "riddle": "I start 'earth' — the soil in which wheat grows." },
-            { "pos": 3, "char": "A", "riddle": "I start 'acre' — the unit used to measure wheat fields." },
-            { "pos": 4, "char": "T", "riddle": "I start 'toast' — what you make from wheat bread." }
-        ]
-    },
-    {
-        "day_index": 39,
-        "target_word": "YIELD",
-        "clues": [
-            { "pos": 0, "char": "Y", "riddle": "I start 'yearly' — how often farmers measure their crop yield." },
-            { "pos": 1, "char": "I", "riddle": "I start 'invest' — what farmers do in seeds hoping for a return." },
-            { "pos": 2, "char": "E", "riddle": "I start 'earth' — the source of every agricultural yield." },
-            { "pos": 3, "char": "L", "riddle": "I start 'labor' — the hard work behind every harvest." },
-            { "pos": 4, "char": "D", "riddle": "I start 'deliver' — what a good harvest does for a farmer." }
+        day_index: 29,
+        target_word: "MUSIC",
+        clues: [
+            { pos: 0, char: "M", riddle: "I can make you dance, relax, cry, remember a moment, or sing badly in the shower. What am I?" },
+            { pos: 1, char: "U", riddle: "I begin UKULELE, a small four-stringed musical instrument." },
+            { pos: 2, char: "S", riddle: "What letter begins SYMPHONY, a large-scale musical composition usually performed by an orchestra?" },
+            { pos: 3, char: "I", riddle: "I begin INSTRUMENT, something musicians use to create sound." },
+            { pos: 4, char: "C", riddle: "What letter begins CHORUS, the repeated section of many songs?" }
         ]
     }
 ];
-
 // Expanded word list for validation
 const VALID_WORDS = [
     // All puzzle target words (original)
